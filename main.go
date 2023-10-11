@@ -85,7 +85,7 @@ func SetGame(title string) {
 	var selectedGame Game
 	title = cases.Title(language.English).String(title)
 	for _, game := range gamesList {
-		if game.Title+" " == cases.Title(language.English).String(title) {
+		if game.Title+" " == title {
 			selectedGame = game
 			break
 		}
